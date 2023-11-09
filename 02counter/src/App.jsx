@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
+  //setcount is a method 
   let [count, setCount] = useState(10)
   const addon = () => {
     setCount(count+1);

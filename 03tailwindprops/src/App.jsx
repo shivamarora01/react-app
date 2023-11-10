@@ -4,7 +4,8 @@ function App() {
 
   return (
     <>
-    <Taili/>
+    <Taili shoename = "Nike AirMax 2" price = "$649"/>
+    <Taili shoename = "Nike Joyride 3" />
     </>
   )
 }

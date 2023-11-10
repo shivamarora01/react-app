@@ -1,4 +1,4 @@
-function Taili()  {
+function Taili({shoename, price = "Not Disclosed"})  {
     return(
         <>
         <div class="sp mx-auto max-w-7xl px-2 py-10 lg:px-0">
@@ -82,9 +82,9 @@ function Taili()  {
         <div class="flex shrink-0 flex-col lg:w-[430px] xl:w-[470px] 2xl:w-[480px]">
           <div class="pb-5">
             <h2 class="text-lg font-semibold md:text-xl xl:text-2xl">
-              Nike Airmax Pro V2
+              {shoename}
             </h2>
-            <p class="mt-4 font-semibold">$250</p>
+            <p class="mt-4 font-semibold">{price}</p>
           </div>
           <div class="mb-2 pt-0.5">
             <h4 class="text-15px mb-3 font-normal capitalize text-opacity-70">

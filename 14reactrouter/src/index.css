@@ -1,3 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+git config --global user.name shivam.arora
+git config --global user.email shivamarora.07.sa@gmail.com

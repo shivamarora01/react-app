@@ -1,4 +1,5 @@
 import React from 'react'
+import imgn from '../Header/i5.png'
 import {Link , NavLink} from 'react-router-dom'
 
 export default function Header() {
@@ -8,8 +9,8 @@ export default function Header() {
                 <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
                     <Link to="/" className="flex items-center">
                         <img
-                            src="https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png"
-                            className="mr-3 h-12"
+                            src={imgn}
+                            className="mr-3 h-9"
                             alt="Logo"
                         />
                     </Link>
@@ -22,7 +23,7 @@ export default function Header() {
                         </Link>
                         <Link
                             to="NewItem"
-                            className="text-white bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
+                            className="text-white bg-pink-950 hover:bg-orange-800 focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
                         >
                             Post New Item
                         </Link>

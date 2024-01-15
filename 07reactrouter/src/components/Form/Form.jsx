@@ -1,5 +1,4 @@
 import React from 'react'
-import {img1} from '../Form/imgin.jpg'
 import { ArrowRight } from 'lucide-react'
 
 function Form() {

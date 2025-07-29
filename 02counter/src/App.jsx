@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -12,9 +12,12 @@ function App() {
   const removeon = () => {
     setCount(count-1);
   }
+  //this will be treated as a variable who stores react element
+  const InternalJSXElement = React.createElement("h1", null, "Hi Internal JSX")
 
   return (
     <>
+    {InternalJSXElement}
     <h1>I am Counter React</h1>
     <h2>Count Number : {count} </h2>
     <br></br>

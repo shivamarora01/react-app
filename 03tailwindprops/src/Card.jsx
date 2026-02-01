@@ -1,6 +1,7 @@
+import { ExtraButton } from './ExtraButton'
 import React from 'react'
 
-export function Card({AboutMacbook , buttontext = "Visit me"}) {
+export function Card({AboutMacbook , buttontext = "Visit me", extra, extraUI}) {
   return (
     <div className="w-[300px] rounded-md border">
       <img
@@ -9,6 +10,11 @@ export function Card({AboutMacbook , buttontext = "Visit me"}) {
         className="h-[200px] w-full rounded-md object-cover"
       />
       <div className="p-4">
+        {extra}
+        {extraUI}
+        <p>This is </p>
+        <ExtraButton>hi</ExtraButton>
+        <p>children</p>
         <h1 className="text-lg font-semibold">{AboutMacbook}</h1>
         <p className="mt-3 text-sm text-gray-600">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?

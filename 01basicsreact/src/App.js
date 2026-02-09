@@ -3,7 +3,7 @@ function result() {
     //return can have only one parent 
     <div>
     <h1>Hi Shivam!</h1>
-    <h2>How are you boy!</h2>
+    <h2>How are you boy, all good?</h2>
     </div>
   );
 }

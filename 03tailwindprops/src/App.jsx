@@ -6,12 +6,17 @@ import { Card } from './Card'
 import SideEffect from './SideEffects'
 import ListsAndKeys from './Lists&Keys'
 import ControlledInput from './ControlledInput'
+import { useState } from 'react'
+import { CountContext } from './context/CountContext'
 function App() {
   const extraUI = <p>Hi I'm added a jsx only</p>
   let isLogin;
+  const [count, setCount] = useState(2);
   return (
     <>
-    <ControlledInput/>
+    <CountContext.Provider value={{count, setCount}}>
+       <ExtraButton/>
+    </CountContext.Provider>
     {/* <SideEffect/> */}
     {/* <ListsAndKeys/> */}
     {/* <ExtraButton/> */}

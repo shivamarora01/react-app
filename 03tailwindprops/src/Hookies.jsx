@@ -6,12 +6,12 @@ export default function Hookies(){
 
     console.log("again rendering");
 
-    const array = ["c","y","x","a","b","m"];
+    const array = useMemo(()=>["c","y","x","a","b","m"],[]);
 
     const sortedArray = useMemo(() => {
         console.log("sorting the array");
         return [...array].sort();
-    }, [count]); 
+    }, [array]); 
 
     return(
         <>

@@ -8,6 +8,7 @@ import ListsAndKeys from './Lists&Keys'
 import ControlledInput from './ControlledInput'
 import { useState } from 'react'
 import { CountContext } from './context/CountContext'
+import Hookies from './Hookies'
 function App() {
   const extraUI = <p>Hi I'm added a jsx only</p>
   let isLogin;
@@ -17,6 +18,7 @@ function App() {
     <CountContext.Provider value={{count, setCount}}>
        <ExtraButton/>
     </CountContext.Provider>
+    <Hookies/>
     {/* <SideEffect/> */}
     {/* <ListsAndKeys/> */}
     {/* <ExtraButton/> */}

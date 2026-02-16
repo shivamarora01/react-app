@@ -15,10 +15,11 @@ function App() {
   const [count, setCount] = useState(2);
   return (
     <>
-    <CountContext.Provider value={{count, setCount}}>
+    {/* <CountContext.Provider value={{count, setCount}}>
        <ExtraButton/>
-    </CountContext.Provider>
+    </CountContext.Provider> */}
     <Hookies/>
+    {/* <ControlledInput/> */}
     {/* <SideEffect/> */}
     {/* <ListsAndKeys/> */}
     {/* <ExtraButton/> */}

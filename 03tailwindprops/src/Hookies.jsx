@@ -11,6 +11,7 @@ export default function Hookies(){
     }
     const increaseOther = useCallback(() => {
         setOther(prev => prev+1);
+        //setting
     },[]);
     console.log(`causing render with count ${count2}`);
     let input;

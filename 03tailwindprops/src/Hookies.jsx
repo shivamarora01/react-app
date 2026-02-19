@@ -20,7 +20,7 @@ export default function Hookies(){
     // console.log("again rendering");
 
     // const array = useMemo(()=>["c","y","x","a","b","m"],[]);
-
+    //array change
     // const sortedArray = useMemo(() => {
     //     console.log("sorting the array");
     //     return [...array].sort();
